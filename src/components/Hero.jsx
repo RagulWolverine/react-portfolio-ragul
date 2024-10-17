@@ -1,5 +1,6 @@
 import { HERO_CONTENT } from "../constants";
 import profilePic from "../assets/kevinRushProfile.png"
+import resume from "../assets/Ragul.S-Resume.pdf"
 import { delay, motion } from "framer-motion"
 
 const container =(delay) => ({
@@ -40,10 +41,10 @@ const Hero = () => {
                   variants={container(1.5)}
                   initial="hidden"
                   animate="visible"
-                  href="/Ragul.S-Resume.pdf" 
+                  href={resume} 
                   target="_blank"
                   rel="noopener noreferrer"
-                  download
+                  download={resume}
                   className="bg-white rounded-full p-4 text-sm text-stone-800 mb-10">
                   Download Resume</motion.a>
             </div>
